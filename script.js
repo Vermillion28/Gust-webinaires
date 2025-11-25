@@ -1,4 +1,11 @@
-// Carousel functionality
+  // Initialiser AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Carousel functionality
         document.addEventListener('DOMContentLoaded', function() {
             const carouselItems = document.querySelectorAll('.carousel-item');
             const carouselDots = document.querySelectorAll('.carousel-dot');

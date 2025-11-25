@@ -630,3 +630,120 @@ footer {
         font-size: 1.6rem;
     }
 }
+/* Ajoutez ces styles à votre fichier style.css */
+
+/* Animation pour les boutons */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Animation pour les cartes */
+.objectif-card, .format-card, .programme-card, .webinaire-item {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.objectif-card:hover, .format-card:hover, .programme-card:hover, .webinaire-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Animation pour les icônes */
+.objectif-card i, .format-card i, .programme-card i {
+    transition: all 0.3s ease;
+}
+
+.objectif-card:hover i, .format-card:hover i, .programme-card:hover i {
+    transform: scale(1.2);
+    color: var(--secondary);
+}
+
+/* Animation pour le header */
+header {
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Animation pour les onglets */
+.tab-btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--primary);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.tab-btn.active::after {
+    width: 80%;
+}
+
+/* Animation pour le formulaire */
+.form-control {
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 75, 140, 0.1);
+}
+
+/* Animation pour le carousel */
+.carousel-item {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour les éléments de liste */
+.feature-item {
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+}
+
+/* Animation pour les images */
+.about-image img {
+    transition: all 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
